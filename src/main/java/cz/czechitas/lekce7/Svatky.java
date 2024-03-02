@@ -109,9 +109,11 @@ public class Svatky {
      * @param jmeno Jméno.
      * @param den   Den v měsíci, kdy má dané jméno svátek (1–31).
      * @param mesic Měsíc, kdy má dané jméno svátek (1–12).
+     * @return
      */
     public void pridejSvatek(String jmeno, int den, int mesic) {
-        pridejSvatek(jmeno, MonthDay.of(mesic, den));
+       pridejSvatek(jmeno, MonthDay.of(mesic, den));
+
     }
 
     /**
@@ -132,6 +134,6 @@ public class Svatky {
      */
     public void smazSvatek(String jmeno) {
         svatky.remove(jmeno);
-        //TODO
+
     }
 }
